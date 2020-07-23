@@ -13,6 +13,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
         android:text="开始"
-        android:textSize="20sp" />
+        android:textSize="21sp" />
 
 </LinearLayout>
