@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewEngineering">
+
+    <Spinner
+        android:id="@+id/menu_choose_projects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/choose_projects"
+        android:layout_gravity="center"
+        android:textSize="26sp"
+        android:layout_marginTop="200dp"
+        />//源数组在values/choose_projects.xml里面，存储选项
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center_horizontal"
+        android:text="确定"
+        android:textSize="20sp"/>
+
+</LinearLayout>
