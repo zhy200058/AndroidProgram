@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/original_leveling_title"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/title">
@@ -99,77 +100,6 @@
 
         />
 
-    <TextView
-        android:id="@+id/cezhan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="  测 站  "
-        android:textSize="24dp"
-        android:layout_below="@id/edit_text_ob"/>
 
-    <TextView
-        android:id="@+id/dianhao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="  点 号  "
-        android:textSize="24dp"
-        android:layout_toRightOf="@+id/cezhan"
-        android:layout_below="@id/edit_text_ob"/>
-
-    <TextView
-        android:id="@+id/shiju"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="  视 距/m  "
-        android:textSize="24dp"
-        android:layout_toRightOf="@+id/dianhao"
-        android:layout_below="@id/edit_text_ob"
-        />
-
-    <TextView
-        android:id="@+id/houshi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="  后 视  "
-        android:textSize="24dp"
-        android:layout_toRightOf="@+id/shiju"
-        android:layout_below="@id/edit_text_ob"/>
-
-    <TextView
-        android:id="@+id/qianshi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="  前 视  "
-        android:textSize="24dp"
-        android:layout_toRightOf="@+id/houshi"
-        android:layout_below="@id/edit_text_ob"/>
-
-    <TextView
-        android:id="@+id/gaocha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="  高 差  "
-        android:textSize="24dp"
-        android:layout_toRightOf="@+id/qianshi"
-        android:layout_below="@id/edit_text_ob"/>
-
-    <TextView
-        android:id="@+id/gaocheng"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" 高 程/m "
-        android:textSize="24dp"
-        android:layout_toRightOf="@+id/gaocha"
-        android:layout_below="@id/edit_text_ob"/>
-
-    <TextView
-        android:id="@+id/beizhu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="  备 注 "
-        android:textSize="24dp"
-        android:layout_toRightOf="@+id/gaocheng"
-        android:layout_below="@id/edit_text_ob"
-        android:layout_alignParentRight="true"/>
 
 </RelativeLayout>
