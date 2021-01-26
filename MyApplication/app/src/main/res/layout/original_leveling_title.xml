@@ -15,7 +15,7 @@
         />
 
     <Button
-        android:id="@+id/new_raw"
+        android:id="@+id/new_row"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="新建一行表格"
