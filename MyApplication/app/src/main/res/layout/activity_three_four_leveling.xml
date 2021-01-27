@@ -1,9 +1,297 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ThreeFourLeveling">
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ThreeFourLeveling">
+        <include layout="@layout/threefour_leveling_title"/>//加载“三四等水准测量记录”布局
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <GridLayout
+            android:id="@+id/GridLayout_title34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/threefour_leveling_title"
+            android:background="@drawable/edit_background"
+            android:columnCount="8"
+            android:rowCount="4">
+
+            <TextView
+                android:id="@+id/cezhan34"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:textSize="18dp"
+                android:text="      测站"
+                android:ems="4" />
+            <TextView
+                android:id="@+id/bianhao34"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:textSize="18dp"
+                android:text="      编号"
+                android:ems="4" />
+            <TextView
+                android:id="@+id/houshishang"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="1"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:textSize="18dp"
+                android:text="后视上丝"
+                android:ems="4"
+                android:background="@drawable/edit_background"/>
+            <TextView
+                android:id="@+id/houshixia"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="1"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:textSize="18dp"
+                android:text="后视下丝"
+                android:ems="4"
+                android:background="@drawable/edit_background"/>
+            <TextView
+                android:id="@+id/houju"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="1"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:textSize="18dp"
+                android:text="     后距"
+                android:ems="4"
+                android:background="@drawable/edit_background"/>
+            <TextView
+                android:id="@+id/shijucha"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="1"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:textSize="18dp"
+                android:text="  视距差d"
+                android:ems="4"
+                android:background="@drawable/edit_background"/>
+            <TextView
+                android:id="@+id/qianshishang"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="1"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:textSize="18dp"
+                android:text="前视上丝"
+                android:ems="4"
+                android:background="@drawable/edit_background"/>
+            <TextView
+                android:id="@+id/qianshixia"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="1"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:textSize="18dp"
+                android:text="前视下丝"
+                android:ems="4"
+                android:background="@drawable/edit_background"/>
+            <TextView
+                android:id="@+id/qianju"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="1"
+                android:layout_column="2"
+                android:layout_row="2"
+                android:textSize="18dp"
+                android:text="     前距"
+                android:ems="4"
+                android:background="@drawable/edit_background"/>
+            <TextView
+                android:id="@+id/sigma_shijucha"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="1"
+                android:layout_column="2"
+                android:layout_row="3"
+                android:textSize="18dp"
+                android:text="      Σd"
+                android:ems="4"
+                android:background="@drawable/edit_background"/>
+            <TextView
+                android:id="@+id/fangxiang"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_column="3"
+                android:layout_row="1"
+                android:textSize="18dp"
+                android:text="      方向"
+                android:ems="4" />
+            <TextView
+                android:id="@+id/chihao"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_column="3"
+                android:layout_row="2"
+                android:textSize="18dp"
+                android:text="      尺号"
+                android:ems="4" />
+            <TextView
+                android:id="@+id/heimian"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_column="4"
+                android:layout_row="1"
+                android:textSize="18dp"
+                android:text="      黑面"
+                android:ems="4" />
+            <TextView
+                android:id="@+id/heimiandushu"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_column="4"
+                android:layout_row="2"
+                android:textSize="18dp"
+                android:text="      读数"
+                android:ems="4" />
+            <TextView
+                android:id="@+id/hongmian"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_column="5"
+                android:layout_row="1"
+                android:textSize="18dp"
+                android:text="      红面"
+                android:ems="4" />
+            <TextView
+                android:id="@+id/hongmiandushu"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_column="5"
+                android:layout_row="2"
+                android:textSize="18dp"
+                android:text="      读数"
+                android:ems="4" />
+            <TextView
+                android:id="@+id/Khei"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_column="6"
+                android:layout_row="1"
+                android:textSize="18dp"
+                android:text="      K+黑"
+                android:ems="4" />
+            <TextView
+                android:id="@+id/jianhong"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_column="6"
+                android:layout_row="2"
+                android:textSize="18dp"
+                android:text="        -红"
+                android:ems="4" />
+            <TextView
+                android:id="@+id/gaocha"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_column="7"
+                android:layout_row="1"
+                android:textSize="18dp"
+                android:text="      高差"
+                android:ems="4" />
+            <TextView
+                android:id="@+id/zhongshu"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="1"
+                android:layout_column="7"
+                android:layout_row="2"
+                android:textSize="18dp"
+                android:text="      中数"
+                android:ems="4" />
+        </GridLayout>//表格title
+
+        <TableLayout
+            android:id="@+id/TableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_below="@id/GridLayout_title34"
+            android:rowCount="2"
+            android:columnCount="8">
+            <TableRow
+                android:background="@drawable/edit_background">
+                <EditText
+                    android:id="@+id/text1"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/edit_background"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/text2"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:layout_columnWeight="1"
+                    android:textSize="20dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text3"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text4"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text5"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text6"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text7"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text8"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/edit_background"/>
+            </TableRow>
+        </TableLayout>//表格记录栏
+    </RelativeLayout>
+
+</ScrollView>
