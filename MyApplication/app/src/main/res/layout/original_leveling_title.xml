@@ -15,14 +15,13 @@
         />
 
     <Button
-        android:id="@+id/new_row"
-        android:layout_width="wrap_content"
+        android:id="@+id/calculate"
+        android:layout_width="121dp"
         android:layout_height="wrap_content"
-        android:text="新建一行表格"
-        android:textSize="16dp"
-        android:layout_toRightOf="@id/edit_text_day"
         android:layout_below="@id/table_title"
-        />
+        android:layout_toRightOf="@id/edit_text_day"
+        android:text="计算"
+        android:textSize="16dp" />
 
     <EditText
         android:id="@+id/edit_text_ob"
@@ -100,6 +99,12 @@
 
         />
 
+    <Button
+        android:id="@+id/save"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:text="保存并开始下一个"
+        android:textSize="16dp"/>
 
 
 </RelativeLayout>

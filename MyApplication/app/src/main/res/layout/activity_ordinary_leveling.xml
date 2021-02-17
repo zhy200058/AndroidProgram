@@ -93,8 +93,8 @@
             <TableRow
                 android:background="@drawable/edit_background">
                 <EditText
-                    android:id="@+id/cezhan"
-                    android:layout_columnWeight="1"
+                    android:id="@+id/t1_"
+                    android:layout_width="0dp"
                     android:background="@drawable/edit_background"
                     android:inputType="numberDecimal"
                     android:maxLines="1"
@@ -104,7 +104,7 @@
                     android:id="@+id/dianhao1"
                     android:inputType="text"
                     android:maxLines="1"
-                    android:layout_columnWeight="1"
+                    android:layout_width="0dp"
                     android:textSize="20dp"
                     android:background="@drawable/edit_background"/>
 
@@ -113,7 +113,7 @@
                     android:inputType="numberDecimal"
                     android:maxLines="1"
                     android:textSize="20dp"
-                    android:layout_columnWeight="1"
+                    android:layout_width="0dp"
                     android:background="@drawable/edit_background"/>
 
                 <EditText
@@ -121,7 +121,7 @@
                     android:inputType="numberDecimal"
                     android:maxLines="1"
                     android:textSize="20dp"
-                    android:layout_columnWeight="1"
+                    android:layout_width="0dp"
                     android:background="@drawable/edit_background"/>
 
                 <EditText
@@ -129,30 +129,95 @@
                     android:inputType="numberDecimal"
                     android:maxLines="1"
                     android:textSize="20dp"
-                    android:layout_columnWeight="1"
+                    android:layout_width="0dp"
                     android:background="@drawable/edit_background"/>
 
                 <EditText
                     android:id="@+id/gaocha"
-                    android:inputType="numberDecimal"
+                    android:inputType="numberSigned|numberDecimal"
                     android:maxLines="1"
                     android:textSize="20dp"
-                    android:layout_columnWeight="1"
-                    android:background="@drawable/edit_background"/>
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background" />
 
                 <EditText
                     android:id="@+id/gaocheng"
-                    android:inputType="numberDecimal"
+                    android:inputType="numberSigned|numberDecimal"
                     android:maxLines="1"
                     android:textSize="20dp"
-                    android:layout_columnWeight="1"
+                    android:layout_width="0dp"
                     android:background="@drawable/edit_background"/>
 
                 <EditText
                     android:id="@+id/beizhu"
                     android:maxLines="1"
                     android:textSize="20dp"
-                    android:layout_columnWeight="1"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/edit_background">
+                <TextView
+                    android:id="@+id/t1_1"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/dianhao11"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:layout_width="0dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/shiju11"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <TextView
+                    android:id="@+id/houshi1"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <TextView
+                    android:id="@+id/qianshi1"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <TextView
+                    android:id="@+id/gaocha1"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background" />
+
+                <EditText
+                    android:id="@+id/gaocheng1"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/beizhu1"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
                     android:background="@drawable/edit_background"/>
             </TableRow>
         </TableLayout>//表格记录栏

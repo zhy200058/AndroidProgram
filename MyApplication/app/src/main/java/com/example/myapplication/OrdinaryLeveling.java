@@ -15,36 +15,39 @@ import android.widget.TableRow;
 import android.widget.TextView;
 
 public class OrdinaryLeveling extends AppCompatActivity {
-    private final int WC= ViewGroup.LayoutParams.WRAP_CONTENT;
-    private final int FP=ViewGroup.LayoutParams.FILL_PARENT;
+    private EditText houshi;
+    private EditText qianshi;
+    private EditText gaocha;
+    private EditText gaocheng;
+    private EditText gaocheng1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ordinary_leveling);
-        Button new_row=(Button)findViewById(R.id.new_row);
-        new_row.setOnClickListener(new View.OnClickListener() {
+        houshi=(EditText)findViewById(R.id.houshi);
+        qianshi=(EditText)findViewById(R.id.qianshi);
+        gaocha=(EditText)findViewById(R.id.gaocha);
+        gaocheng=(EditText)findViewById(R.id.gaocheng);
+        gaocheng1=(EditText)findViewById(R.id.gaocheng1);
+        Button calculate=(Button)findViewById(R.id.calculate);//实现计算功能
+        calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String houshistr=houshi.getText().toString();
+                float houshif=Float.parseFloat(houshistr);
+                String qianshistr=qianshi.getText().toString();
+                float qianshif=Float.parseFloat(qianshistr);
+                String gaochengstr=gaocheng.getText().toString();
+                float gaochengf=Float.parseFloat(gaochengstr);
 
-                TableLayout tableLayout=(TableLayout)findViewById(R.id.GridLayout);
-                tableLayout.setStretchAllColumns(true);
-                for(int row=0;row<1;row++)
-                {
-                    TableRow tableRow=new TableRow(OrdinaryLeveling.this);
-                    for(int col=0;col<8;col++)
-                    {
-                        EditText tv=new EditText(OrdinaryLeveling.this);
-                        tv.setBackgroundResource(R.drawable.edit_background);
-                        tv.setTextSize(20);
-                        if(col!=1&&col!=7)
-                        {
-                            tv.setInputType(InputType.TYPE_NUMBER_FLAG_DECIMAL|InputType.TYPE_CLASS_NUMBER);
-                        }
-                        tableRow.addView(tv);
-                    }
-                    tableLayout.addView(tableRow,new TableLayout.LayoutParams(FP,WC));
-                    tableLayout.setStretchAllColumns(true);
-                }
+                float gaochaf=houshif-qianshif;
+                String gaochastr=String.valueOf(gaochaf);
+                gaocha.setText(gaochastr);
+
+                float gaocheng1f=gaochengf+gaochaf;
+                String gaocheng1str=String.valueOf(gaocheng1f);
+                gaocheng1.setText(gaocheng1str);
+
             }
         });
     }
