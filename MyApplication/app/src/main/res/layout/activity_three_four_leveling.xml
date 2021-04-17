@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ThreeFourLeveling">
+        <include layout="@layout/threefour_leveling_title"/>//加载“三四等水准测量记录”布局
+
+        <TableLayout
+            android:id="@+id/TableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_below="@+id/threefour_leveling_title"
+            android:rowCount="4"
+            android:columnCount="8">
+            <TableRow
+                android:background="@drawable/edit_background">
+                <TextView
+                    android:id="@+id/text11"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"/>
+
+                <TextView
+                    android:id="@+id/text12"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="后上"/>
+
+                <TextView
+                    android:id="@+id/text13"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="前上"/>
+
+                <TextView
+                    android:id="@+id/text14"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/text15"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/text16"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/text17"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:hint="输后尺K"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/text18"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp" />
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/edit_background">
+                <TextView
+                    android:id="@+id/text21"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="测站"/>
+
+                <TextView
+                    android:id="@+id/text22"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="后下"/>
+
+                <TextView
+                    android:id="@+id/text23"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:text="前下"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/text24"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="方向"/>
+
+                <TextView
+                    android:id="@+id/text25"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="黑面"/>
+
+                <TextView
+                    android:id="@+id/text26"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="红面"/>
+
+                <TextView
+                    android:id="@+id/text27"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text=" K+黑"/>
+
+                <TextView
+                    android:id="@+id/text28"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="高差"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/edit_background">
+                <TextView
+                    android:id="@+id/text31"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="编号"/>
+
+                <TextView
+                    android:id="@+id/text32"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="后距"/>
+
+                <TextView
+                    android:id="@+id/text33"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="前距"/>
+
+                <TextView
+                    android:id="@+id/text34"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="尺号"/>
+
+                <TextView
+                    android:id="@+id/text35"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="读数"/>
+
+                <TextView
+                    android:id="@+id/text36"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="读数"/>
+
+                <TextView
+                    android:id="@+id/text37"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="  -红"/>
+
+                <TextView
+                    android:id="@+id/text38"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="中数"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/edit_background">
+                <TextView
+                    android:id="@+id/text41"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/text42"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="视距差d"/>
+
+                <TextView
+                    android:id="@+id/text43"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:text="  Σd"/>
+
+                <TextView
+                    android:id="@+id/text44"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/text45"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/text46"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/text47"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:hint="输前尺K"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/text48"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp" />
+            </TableRow>
+
+
+        </TableLayout>//表格title
+
+        <TableLayout
+            android:id="@+id/TableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_below="@id/TableLayout1"
+            android:rowCount="4"
+            android:columnCount="8">
+            <TableRow
+                android:background="@drawable/edit_background">
+                <EditText
+                    android:id="@+id/text51"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/text52"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:layout_width="0dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text53"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text54"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:hint="后"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text55"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text56"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text57"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text58"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/edit_background">
+                <TextView
+                    android:id="@+id/text61"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/text62"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:layout_width="0dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text63"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text64"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:hint="前"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text65"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text66"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text67"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text68"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/edit_background">
+                <TextView
+                    android:id="@+id/text71"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/text72"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:layout_width="0dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text73"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <TextView
+                    android:id="@+id/text74"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:hint="后-前"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text75"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text76"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text77"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text78"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+            </TableRow>
+
+            <TableRow
+                android:background="@drawable/edit_background">
+                <TextView
+                    android:id="@+id/text81"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"
+                    android:maxLines="1"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/text82"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:layout_width="0dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/edit_background"/>
+
+                <EditText
+                    android:id="@+id/text83"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <TextView
+                    android:id="@+id/text84"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <TextView
+                    android:id="@+id/text85"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <TextView
+                    android:id="@+id/text86"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <TextView
+                    android:id="@+id/text87"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+
+                <TextView
+                    android:id="@+id/text88"
+                    android:maxLines="1"
+                    android:textSize="20dp"
+                    android:layout_width="0dp"
+                    android:background="@drawable/edit_background"/>
+            </TableRow>
+        </TableLayout>//表格记录栏
+    </RelativeLayout>
+
+</ScrollView>

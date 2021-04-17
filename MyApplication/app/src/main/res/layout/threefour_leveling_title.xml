@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/threefour_leveling_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/title">
+
+    <TextView
+        android:id="@+id/table_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:text="三四等水准测量记录"
+        />
+
+    <Button
+        android:id="@+id/calculate1"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/table_title"
+        android:layout_toRightOf="@id/edit_text_day"
+        android:text="计算"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/edit_text_ob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="观测者  "
+        android:layout_below="@id/table_title"
+        android:textSize="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edit_text_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="记录者  "
+        android:layout_toRightOf="@id/edit_text_ob"
+        android:layout_below="@id/table_title"
+        android:textSize="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edit_text_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="起点   "
+        android:layout_toRightOf="@id/edit_text_record"
+        android:layout_below="@id/table_title"
+        android:textSize="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edit_text_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="终点   "
+        android:layout_toRightOf="@id/edit_text_start"
+        android:layout_below="@id/table_title"
+        android:textSize="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edit_text_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="时间：年 "
+        android:layout_toRightOf="@id/edit_text_end"
+        android:layout_below="@id/table_title"
+        android:textSize="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edit_text_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="时间：月 "
+        android:layout_toRightOf="@id/edit_text_year"
+        android:layout_below="@id/table_title"
+        android:textSize="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edit_text_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="时间：日 "
+        android:layout_toRightOf="@id/edit_text_month"
+        android:layout_below="@id/table_title"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/save1"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:text="保存并开始下一个"
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/shangchuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/locate"
+        android:text="上 传"
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/locate"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/table_title"
+        android:text="位置服务"
+        android:textSize="16dp" />
+
+</RelativeLayout>

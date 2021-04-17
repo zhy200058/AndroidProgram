@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="choose_projects">
+        <item>NULL</item>
+        <item>普通水准测量</item>
+        <item>三四等水准测量</item>
+        <item>导线测量</item>
+    </string-array>
+</resources>
