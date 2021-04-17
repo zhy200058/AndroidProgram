@@ -3,6 +3,8 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
@@ -13,6 +15,10 @@ import android.widget.GridLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.baidu.mapapi.SDKInitializer;
+import com.baidu.mapapi.map.MapView;
 
 public class OrdinaryLeveling extends AppCompatActivity {
     private EditText houshi;
@@ -20,6 +26,7 @@ public class OrdinaryLeveling extends AppCompatActivity {
     private EditText gaocha;
     private EditText gaocheng;
     private EditText gaocheng1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +37,7 @@ public class OrdinaryLeveling extends AppCompatActivity {
         gaocheng=(EditText)findViewById(R.id.gaocheng);
         gaocheng1=(EditText)findViewById(R.id.gaocheng1);
         Button calculate=(Button)findViewById(R.id.calculate);//实现计算功能
+        Button map=(Button)findViewById(R.id.locate);//打开地图
         calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,5 +58,34 @@ public class OrdinaryLeveling extends AppCompatActivity {
 
             }
         });
+
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Boolean screen = isScreenChange();
+                if(screen==true)//若横屏
+                {
+                    Toast.makeText(OrdinaryLeveling.this,"请竖屏后再点击",Toast.LENGTH_SHORT).show();
+                }else if(screen==false)//若竖屏
+                {
+                    Intent intent = new Intent(OrdinaryLeveling.this, BaiduMap.class);
+                    startActivity(intent);//转到百度地图
+                }
+            }
+        });
+    }
+
+    public boolean isScreenChange() {
+        Configuration mConfiguration = this.getResources().getConfiguration(); //获取设置的配置信息
+        int ori = mConfiguration.orientation ; //获取屏幕方向
+
+        if(ori == mConfiguration.ORIENTATION_LANDSCAPE){
+            //横屏
+            return true;
+        } else if (ori == mConfiguration.ORIENTATION_PORTRAIT){
+            //竖屏
+            return false;
+        }
+        return false;
     }
 }

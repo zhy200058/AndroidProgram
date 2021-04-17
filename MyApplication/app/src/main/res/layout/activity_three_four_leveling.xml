@@ -546,7 +546,9 @@
                     android:layout_width="0dp"
                     android:background="@drawable/edit_background"/>
             </TableRow>
-        </TableLayout>//表格记录栏
+        </TableLayout>
+
+
     </RelativeLayout>
 
 </ScrollView>

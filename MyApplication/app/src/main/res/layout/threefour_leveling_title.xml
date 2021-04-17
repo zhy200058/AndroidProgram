@@ -105,4 +105,19 @@
         android:text="保存并开始下一个"
         android:textSize="16dp"/>
 
+    <Button
+        android:id="@+id/shangchuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/locate"
+        android:text="上 传"
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/locate"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/table_title"
+        android:text="位置服务"
+        android:textSize="16dp" />//表格记录栏
 </RelativeLayout>
